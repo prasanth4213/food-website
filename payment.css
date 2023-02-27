@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    padding: 25px;
+    min-height: 110vh;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 230), rgb(255, 0, 115),rgb(255, 0, 0));
+    padding-bottom: 70px;
+}
+
+.container form{
+    padding: 20px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .home-btn{
+    display: flex;
+    text-align: right;
+    font-size: 14px;
+    background: rgb(7, 61, 239);
+    border-radius: 25px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.container form .home-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container form .home-btn:hover{
+    background: rgb(8, 216, 8);
+}
+
+.container form .row .col{
+    flex: 1 1 250px;
+}
+
+.container form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+    margin: 15px 0;
+}
+
+.container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.container form .row .col .inputBox input{
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+
+.container form .row .col .inputBox img{
+    width: 70px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form .row .col .inputBox img:hover{
+    cursor: pointer;
+}
+
+.container form .btn{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: rebeccapurple;
+    color: #fff;
+    font-size: 18px;
+}
+
+.container form .btn:hover{
+    background: rgb(15, 218, 15);
+}
+
+.container form .online-payments .upi-payments{
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.container form .online-payments img{
+    width: 100px;
+    height: 80px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container form .online-payments img:hover{
+    cursor: pointer;
+}
+
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader-container img{
+    width: 25rem;
+}
+
+.loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+}

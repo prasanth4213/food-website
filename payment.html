@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+
+            <button class="home-btn"><a href="menu.html">Go To Menu</a></button>
+
+            <div class="row">
+            <div class="col">
+                <h3 class="title">payment</h3>
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="images/paypal.png" alt="">
+                    <img src="images/mastercard.jfif" alt="">
+                    <img src="images/americanexpress.jfif" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr.james cameron" required>
+                </div>
+                <div class="inputBox">
+                    <span>credit or debit card number :</span>
+                    <input type="phone" placeholder="1111-2222-3333-4444" onkeypress="return restrictAlphabets(event)" required>
+                </div>
+                <div class="inputBox">
+                    <span>expire month and year :<span>
+                    <input type="month" id="start" name="start" required>
+                </div>
+                <div class="inputBox">
+                    <span>CVV :</span>
+                    <input type="phone" placeholder="1234" onkeypress="return restrictAlphabets(event)" required>
+                </div>
+            </div>
+            </div>
+            <button class="btn" value="proceed">proceed</button>
+        
+
+            <div class="online-payments">
+                <h3 class="upi-payments">UPI payments</h3>
+                <img src="images/paytm-logo.png" alt="">
+                <img src="images/gpay.png" alt="">
+                <img src="images/phonepay.jfif" alt="">
+            </div>
+        </form>
+    </div>
+
+    
+<!-- loader section -->
+
+<div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
+
+    <script>   
+        function restrictAlphabets(e){
+        var x = e.which || e.keycode;
+        if((x >= 48 && x <= 57))
+            return true;
+        else
+            return false;
+        }
+
+        // loader
+
+function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut(){
+    setInterval(loader, 3000);
+}
+
+window.onload = fadeOut;
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Delivery App</title>
+
+        <!--css-->
+        <link rel="stylesheet" href="home.css">
+        
+        <!--box icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <img src="images/food logo.png" class="logo" alt="">
+                    <header>Login</header>
+                    <form method="post" name="login" action="#" onsubmit="return loginValidation()">
+                        <div class="field input-field">
+                            <input type="email" name="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password" placeholder="password" class="password">
+                            <i class='bx bxs-hide eye-icon' ></i>
+                        </div>
+                        
+                        <div class="form-link">
+                            <a href="#" class="forget-pass" onclick="movetoForget()">Forget password?</a>
+                        </div>
+                        
+                        <div class="field button-field">
+                            <button type="submit" class="submit" name="submit">Login</button>
+                        </div>
+
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account?<a href="#" class="link signup-link" onclick="movetoSignup()">Signup</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="loader-container">
+            <img src="images/loader.gif" alt="">
+        </div>
+
+        <script src="home.js"></script>
+    </body>
+</html>
